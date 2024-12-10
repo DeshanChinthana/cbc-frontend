@@ -1,0 +1,10 @@
+export default function ProductCard() {
+  return (
+    <div className="product-card">
+        <h3>Card Title</h3>
+        <h5>Card Sub Title</h5>
+        <p>Card description comes here</p>
+        <h4>Price</h4>
+    </div>
+  )
+}
