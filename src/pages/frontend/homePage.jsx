@@ -1,18 +1,43 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
-    <div className="flex justify-center p-5">
-      <div className="home-container text-center">
-        <h2 className="text-2xl text-blue-800 font-semibold my-8">Welcome to Our Website!</h2>
-        <p className="mb-10">
-          Explore a world of possibilities with our services. We are here to make your life easier and more enjoyable.
-        </p>
-
-        <div>
-          <Link to="/login" className="bg-blue-700 hover:bg-blue-500 text-white p-4 mt-3">Login</Link>
+    <>
+      <nav className="bg-white shadow-md">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <div className="text-2xl font-bold text-blue-600">
+            <Link to="#">BrandName</Link>
+          </div>
+          <div className="hidden md:flex space-x-6">
+            <Link to="#" className="text-gray-600 hover:text-blue-600">Home</Link>
+            <Link to="#" className="text-gray-600 hover:text-blue-600">About</Link>
+            <Link to="#" className="text-gray-600 hover:text-blue-600">Products</Link>
+            <Link to="#" className="text-gray-600 hover:text-blue-600">Contact</Link>
+          </div>
+          <div className="hidden md:flex space-x-4">
+            <button className="px-4 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-md hover:bg-blue-600 hover:text-white">
+              Log In
+            </button>
+            <button className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700">
+              Sign Up
+            </button>
+          </div>
+          <div className="md:hidden">
+            <button
+              className="text-gray-600 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600"
+              aria-label="Toggle menu"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
-    </div>
-  )
+      </nav>
+    </>
+  );
 }
