@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Home from './pages/frontend/Home'
 import AdminPanel from './pages/backend/AdminPanel'
+import Login from './pages/frontend/Login'
 
 export default function App() {
 
@@ -12,6 +13,7 @@ export default function App() {
     <BrowserRouter>
       <Routes path='/*'>
         <Route path='/*' element={<Home />} />
+        <Route path='/login' element={<Login/>} />
         <Route path='/admin' element={<AdminPanel/>} />
       </Routes>
     </BrowserRouter>
