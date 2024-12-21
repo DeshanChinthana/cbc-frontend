@@ -15,6 +15,7 @@ export default function App() {
       <Routes path='/*'>
         <Route path='/*' element={<Home />} />
         <Route path='/login' element={<Login/>} />
+        <Route path='/signup' element={<SignUp/>} />
         <Route path='/admin' element={<AdminPanel/>} />
       </Routes>
     </BrowserRouter>
