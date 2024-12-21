@@ -5,6 +5,7 @@ import './App.css'
 import Home from './pages/frontend/Home'
 import AdminPanel from './pages/backend/AdminPanel'
 import Login from './pages/frontend/Login'
+import SignUp from './pages/frontend/SignUp'
 
 export default function App() {
 
