@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Login() {
   return (
     <div className="flex h-screen bg-gray-100 items-center justify-center">
@@ -65,7 +63,7 @@ export default function Login() {
         </form>
 
         <p className="mt-4 text-center text-sm text-gray-600">
-          Don't have an account?{' '}
+          Don&apos;t have an account?{' '}
           <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
             Sign up
           </a>
