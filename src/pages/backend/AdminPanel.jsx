@@ -4,7 +4,7 @@ import { Link, Route, Routes } from "react-router-dom";
 export default function AdminPanel() {
   return (
     <div className="bg-blue-200 w-full h-screen flex">
-      <div className="w-[20%] h-screen bg-blue-500 flex flex-col items-center py-4">
+      <div className="w-[20%] h-screen bg-blue-950 flex flex-col items-start px-10 py-10">
         <Link
           className="flex flex-row items-center mb-4 text-white hover:text-blue-200"
           to="/admin/dashboard"
@@ -34,7 +34,7 @@ export default function AdminPanel() {
         </Link>
       </div>
 
-      <div className="w-[80%] h-screen bg-red-600">
+      <div className="w-[80%] h-screen bg-blue-200">
         <Routes path="/*">
           <Route path="/dashboard" element={<h1>Dashboard</h1>} />
           <Route path="/orders" element={<h1>Orders</h1>} />
