@@ -1,5 +1,6 @@
 import { BsBoxSeam, BsCart4, BsGraphUp, BsPeopleFill } from "react-icons/bs";
 import { Link, Route, Routes } from "react-router-dom";
+import AdminProducts from "./adminProducts";
 
 export default function AdminPanel() {
   return (
@@ -37,6 +38,7 @@ export default function AdminPanel() {
       <div className="w-[80%] h-screen bg-blue-200">
         <Routes path="/*">
           <Route path="/dashboard" element={<h1>Dashboard</h1>} />
+          <Route path="/products" element={<AdminProducts/>} />
           <Route path="/orders" element={<h1>Orders</h1>} />
           <Route path="/customers" element={<h1>Customers</h1>} />
           <Route path="/*" element={<h1>404 not found the admin page</h1>} />
