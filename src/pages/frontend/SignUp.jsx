@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function SignUp() {
   return (
     <div className="flex h-screen bg-gray-100 items-center justify-center">
