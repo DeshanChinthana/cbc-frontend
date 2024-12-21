@@ -47,9 +47,6 @@ export default function Home() {
           <Route path="/contact" element={<h2>Contact page</h2>} />
           <Route path="/*" element={<h2>Page Not Found</h2>} />
         </Routes>
-        <div className='text-center'>
-          <h2>Home page</h2>
-        </div>
       </div>
     </>
   );
